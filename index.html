@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Test for Alzheimer's</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container" id="welcomeScreen">
+        <h1>Cognitive Test for Early Detection of Alzheimer's</h1>
+        <button id="startTest">Start Test</button>
+    </div>
+
+    <div class="container" id="patientInfo" style="display: none;">
+        <h2>Enter Patient Information</h2>
+        <input type="text" id="patientId" placeholder="Patient ID">
+        <input type="number" id="age" placeholder="Age">
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <button id="proceedTest">Proceed</button>
+    </div>
+
+    <div class="container" id="testContainer" style="display: none;">
+        <h2 id="testTitle">Cognitive Test</h2>
+        <div id="testContent"></div>
+        <button id="nextTest" style="display: none;">Next</button>
+    </div>
+    <div id="scoreBoard" style="display: none;"></div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
